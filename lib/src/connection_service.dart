@@ -1,8 +1,8 @@
 import 'package:xinmods/xinmods.dart';
 
 import "xm_auth_headers_stub.dart"
-  if (dart.library.io) 'xinmods/xm_auth_headers_basic.dart'
-  if (dart.library.html) 'xinmods/xm_auth_headers_web.dart'
+  if (dart.library.io) './xm_auth_headers_basic.dart'
+  if (dart.library.html) './xm_auth_headers_web.dart'
 ;
 
 import 'package:flutter/foundation.dart';
