@@ -7,3 +7,4 @@ export './src/xm_image.dart';
 export './src/xm_models.dart';
 export './src/xm_query_builder.dart';
 export './src/xm_remote_requests.dart';
+export './src/connection_service.dart';
