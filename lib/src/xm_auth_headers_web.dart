@@ -38,7 +38,7 @@ XmConnection? getCustomConnection() {
       // a local or a remote deployment ?
       deploymentType:
         XinmodsDeploymentType.values.firstWhere(
-          (e) => e.name == deploymentType,
+          (e) => e.name.toLowerCase() == deploymentType.toLowerCase(),
           orElse: () => XinmodsDeploymentType.local
         ),
 
