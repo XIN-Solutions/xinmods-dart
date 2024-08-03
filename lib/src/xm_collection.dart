@@ -82,7 +82,7 @@ class XmCollection {
    */
   Future<bool> putItem(String path, Object obj, {
     XmCollectionPutItemBehavior putBehavior =
-    XmCollectionPutItemBehavior.merge
+    XmCollectionPutItemBehavior.Merge
   }) async {
     var remoteRequests = XmRemoteRequests(connection: this.connection);
 
@@ -149,9 +149,9 @@ class XmCollection {
   // Convenience functions
   //
 
-  Future<bool> putAndOverwrite(String path, Object obj) => putItem(path, obj, putBehavior: XmCollectionPutItemBehavior.overwrite);
-  Future<bool> putAndMerge(String path, Object obj) => putItem(path, obj, putBehavior: XmCollectionPutItemBehavior.merge);
-  Future<bool> putAndFailIfExists(String path, Object obj) => putItem(path, obj, putBehavior: XmCollectionPutItemBehavior.failIfExists);
+  Future<bool> putAndOverwrite(String path, Object obj) => putItem(path, obj, putBehavior: XmCollectionPutItemBehavior.Overwrite);
+  Future<bool> putAndMerge(String path, Object obj) => putItem(path, obj, putBehavior: XmCollectionPutItemBehavior.Merge);
+  Future<bool> putAndFailIfExists(String path, Object obj) => putItem(path, obj, putBehavior: XmCollectionPutItemBehavior.FailIfExists);
 
 
 }

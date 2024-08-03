@@ -244,9 +244,9 @@ class XmGetFacetAtPathOptions {
 }
 
 enum XmCollectionPutItemBehavior {
-  merge,
-  overwrite,
-  failIfExists
+  Merge,
+  Overwrite,
+  FailIfExists
   ;
 }
 
